@@ -29,12 +29,15 @@ for i := 1; i <= 3; i++ {
 	}
 	fmt.Println()  // Nova linha após cada ciclo do loop interno
 }
+
 nomes := []string{"Tais", "Tiago", "Diana"}
 
+//pede pelo indice/posicao do array e pelos valores que estao nas posições
 for indice, nome := range  nomes {
 	fmt.Println(indice, nome)
 }
 
+//escolhe que nao quer mostrar a posicao 
 for _, nome := range  nomes {
 	fmt.Println(nome)
 }
@@ -69,10 +72,10 @@ palavras := map[string] string {
     }
 
     // Loop for aninhado para iterar sobre o mapa aninhado
-    for chaveExterna, mapaInterno := range mapaAninhado {
+    for chaveExterna, mapaInternoSubschaves := range mapaAninhado {
         fmt.Printf("Chave Externa: %s\n", chaveExterna)
 
-        for subchave, valor := range mapaInterno {
+        for subchave, valor := range mapaInternoSubschaves {
             fmt.Printf("  Subchave: %s, Valor: %s\n", subchave, valor)
         }
     }

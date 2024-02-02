@@ -42,8 +42,9 @@ func main() {
 	str2 := "Texto2"
 	fmt.Println(str2)
 
-	char := 'A'
-	fmt.Println(char)
+	// nao tem tipo char, vai retornar um numero inteiro correspondente a letra na tabela ascii
+	naoTemChar := 'A'
+	fmt.Println(naoTemChar)
 
 	// FIM STRINGS
 
@@ -53,6 +54,7 @@ func main() {
 	var booleano1 bool
 	fmt.Println(booleano1)
 
+	//existe o tipo error
 	var erro error = errors.New("Erro interno")
 	fmt.Println(erro)
 }

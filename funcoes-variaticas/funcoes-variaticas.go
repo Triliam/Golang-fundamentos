@@ -16,6 +16,7 @@ func escrever(texto string, numeros...int) {
 	}
 }
 
+//pode ter apenas um parametro variatico por funcao: (texto string, outroTexto...string, num...int) n conseguiria colocar o num...int, e o variatico tem que ser o ultimo parametro da funcao
 func gratz(texto string, outroTexto...string) {
 	for _, ot := range outroTexto {
 		fmt.Println(texto, ot)

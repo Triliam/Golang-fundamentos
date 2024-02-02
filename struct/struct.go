@@ -2,18 +2,17 @@ package main
 
 import "fmt"
 
-type user struct {
-	name string
-	age int8
-	address adresses
-}
-
 type adresses struct {
 	address string
 	email string
 	personalIdCPF int64
 }
 
+type user struct {
+	name string
+	age int8
+	address adresses
+}
 
 func main() {
 
@@ -33,7 +32,10 @@ func main() {
 	user2 := user{"Chris", 13, address2}
 
 	fmt.Println(user2)
-
+	fmt.Println(user2.address)
+	fmt.Println(user2.address.address)
+	fmt.Println(user2.address.email)
+	//fmt.Println(user2.email) da erro - ver em pseudoHerança
 	user3 := user{name: "Tais"}
 	fmt.Println(user3)
 }

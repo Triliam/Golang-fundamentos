@@ -8,6 +8,7 @@ import (
 
 func main() {
 	fmt.Println("Olá World!")
+	// chama a funcao com visibilidade Publica (inicial Maiuscula) Escrever(), e Escrever() chama dentro de si escrever() 
 	auxiliar.Escrever()
 
 	erro := checkmail.ValidateFormat("tais@gmail.com")

@@ -11,6 +11,7 @@ func main() {
 		fmt.Println("numero menor que 15")
 	}
 
+	// pode atribuir um valor a uma variavel direto no if e em seguida setar a condicao
 	if novoNumero := numero; novoNumero > 1 {
 		fmt.Println("Número é maior que 1")
 	} else if numero < -10 {

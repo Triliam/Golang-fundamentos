@@ -17,10 +17,10 @@ func main() {
 	fmt.Println(array3)
 
 	//slice é mais flexivel em questao de capacidade/tamanho
-	slice := []int{11, 12, 13, 14, 15}
-	fmt.Println(slice)
-	slice = append(slice, 16)
-	fmt.Println(slice)
+	tipoSlice := []int{11, 12, 13, 14, 15}
+	fmt.Println(tipoSlice)
+	tipoSlice = append(tipoSlice, 16)
+	fmt.Println(tipoSlice)
 
 	//Um slice é um pedaço de array
 	slice2 := array2[0:2]
