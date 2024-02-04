@@ -2,12 +2,12 @@ package main
 
 import "fmt"
 
-func fibonacci(posicao uint) uint {
-	if posicao <= 1 {
-		return posicao
+func fibonacci(num uint) uint {
+	if num <= 1 {
+		return num
 	}
 
-	return fibonacci(posicao-2) + fibonacci(posicao-1)
+	return fibonacci(num-2) + fibonacci(num-1)
 }
 
 func main() {
